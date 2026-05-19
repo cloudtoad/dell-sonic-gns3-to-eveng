@@ -16,7 +16,7 @@ zip that mirrors the `/opt/unetlab/` directory layout, with:
 
 ## Usage
 
-```bash
+```
 python3 gns3a_to_eveng.py sonic_4.5.2.zip --id dellsonic
 ```
 
@@ -24,7 +24,8 @@ Writes `sonic_4.5.2-eveng.zip` in the current directory.
 
 ## Install on an EVE-NG host
 
-```unzip sonic_4.5.2-eveng.zip -d /tmp/eveng-pkg \
+```
+unzip sonic_4.5.2-eveng.zip -d /tmp/eveng-pkg \
     && bash /tmp/eveng-pkg/INSTALL.sh'
 ```
 
