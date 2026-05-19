@@ -44,6 +44,8 @@ def build_template_yaml(app: dict) -> tuple[str, str]:
         "type: qemu",
         f"name: {name}",
         f"description: {app.get('description', name)}",
+        "icon: Switch.png",
+        "cpulimit: 1",
         f"cpu: {q.get('cpus', 1)}",
         f"ram: {q.get('ram', 1024)}",
         f"ethernet: {q.get('adapters', 1)}",

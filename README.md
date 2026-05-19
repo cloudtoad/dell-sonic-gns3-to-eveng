@@ -35,12 +35,19 @@ unzip sonic_4.5.2-eveng.zip -d /tmp/eveng-pkg \
 `unl_wrapper -a fixpermissions`. Refresh the EVE-NG web UI and the
 appliance appears in the node-add menu.
 
+## Tested
+
+- EVE-NG Community 6.2.0-4
+- Dell Enterprise SONiC 4.5.1 and 4.5.2
+- Two-node lab with LLDP neighbor discovery between converted nodes
+
 ## Caveats
 
 - `qemu_options` uses a generic kvm/serial line; tune the emitted YAML
   if your environment needs specific flags (e.g. `-cpu host`, `-smp`).
 - KVM is required on the EVE-NG host (nested virt counts).
-- No icon — EVE-NG falls back to its default switch icon.
+- Icon defaults to `Switch.png`. Edit the YAML if you want a different
+  icon from `/opt/unetlab/html/images/icons/`.
 
 ## License
 
